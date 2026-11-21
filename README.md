@@ -32,6 +32,6 @@ pytest --cov=src --cov-report=term-missing
 
 ## 3. Roteiro das Práticas em Sala
 
-- **Prática 1 (Manhã):** Completar `tests/unit/test_desconto.py` aplicando padrão **AAA**, **Valor Limite** (`@pytest.mark.parametrize`), **`pytest.raises`** e **Mock** (`MagicMock`).
+- **Prática 1 (Manhã):** Completar `tests/unit/test_desconto.py` aplicando padrão **AAA**, **Valor Limite** (`@pytest.mark.parametrize`) e **`pytest.raises`**.
 - **Prática 2 (Tarde):** Completar `tests/integration/test_api_pedidos.py` testando os endpoints `POST /pedidos` e `GET /pedidos` com `TestClient` e verificando a cobertura com `pytest-cov`.
 - **Prática 3 (Tarde):** Criar `.github/workflows/ci.yml` com dois jobs (`unit-tests` e `integration-tests` usando `needs: unit-tests`), fazer `git push` e acompanhar o pipeline no **GitHub Actions**.

@@ -16,9 +16,3 @@ def calcular_frete(valor_pedido: float, distancia_km: float) -> float:
     if valor_pedido >= 200:
         return 0.0
     return round(10.0 + distancia_km * 1.5, 2)
-
-
-def aprovar_pedido(pedido_id: int, email: str, mailer) -> dict:
-    """Aprova um pedido e dispara notificação por e-mail via serviço externo."""
-    mailer.enviar(email, f"Pedido #{pedido_id}")
-    return {"pedido_id": pedido_id, "status": "aprovado"}
